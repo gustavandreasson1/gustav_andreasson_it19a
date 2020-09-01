@@ -7,3 +7,5 @@ console.log(text);
 if (age) >= 18){
     console.log("Du är vuxen")
 } else {
+    console.log("DU är barn")
+    
