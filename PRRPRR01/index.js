@@ -5,7 +5,7 @@ let age = 17
 
 
 //if-sats - att göra val
-if (age) >=18){
+if (age) =18){
     console.log("Du är vuxen")
 } else {
     console.log("Du är barn")
