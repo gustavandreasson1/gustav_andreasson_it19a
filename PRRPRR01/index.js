@@ -24,8 +24,18 @@ let div = document.querySelector("#division")
 let add = document.querySelector("#addition")
 let sub = document.querySelector("#subtraktion")
 
-
 mult.innerHTML = `multiplikation`
 div.innerHTML = `division`
 add.innerHTML = `addition`
 sub.innerHTML = `subtraktion`
+
+
+//Skapa variabel för knappen
+let button = document.querySelector("#knapp")
+
+//Skapa eventlyssnare till knappen
+button.addEventListener("click", math)
+
+function math(event){
+    console.log("math-funktionen körs")
+}
