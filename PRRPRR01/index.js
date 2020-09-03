@@ -43,5 +43,6 @@ function math(event){
     let num2 = parseFloat(document.querySelector("#number2").value)
     
     add.innerHTML = `${num1}+${num2}=${num1+num2}`
+    sub.innerHTML = `${num1}-${num2}=${num1-num2}`
 
 }
