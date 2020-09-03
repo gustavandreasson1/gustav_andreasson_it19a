@@ -1,18 +1,19 @@
-
-<head></head>
-
+console.log("hej")
 
 let name = Gustav
 let age = 17
 
-console.log(`Hej ${name} du är ${age} år gammal`)
-
 
 //if-sats - att göra val
-if (age) >= 18){
+if (age) >=18){
     console.log("Du är vuxen")
 } else {
-    console.log("DU är barn")
+    console.log("Du är barn")
 }
 
 
+console.log(`Hej ${name} du är ${age} år gammal`)
+
+
+let text = document.querySelector("#text")
+text.innerHTML = (`${name} är ${age} år gammal`)
