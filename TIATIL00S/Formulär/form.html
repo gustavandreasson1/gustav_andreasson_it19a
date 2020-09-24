@@ -6,38 +6,63 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+    table {
+  background-color: lightgrey;
+  width: 400px;
+  border: 1px solid hotpink;
+  padding: 50px;
+  margin-left: 40%
+}
+
+
+    </style>
+    
     <h1>Formulär</h1>
     <p>Fyll i formuläret</p>
     <form action="mailto:gustav.andreasson@elev.ga.ntig.se" method="get" enctype="text/plain"> 
     <hr>
-      <div>  
-        <label for="email">Email</label>
-        <input type="email" placeholder="E-post" name="email" id="email" required>
+<table>
+<tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" placeholder="E-post" name="email" id="email" required></td>
+</tr>
+<tr>
+        <td><label for="psw">Password</label></td>
+        <td><input type="password" placeholder="Lösenord" name="psw" id="psw" required></td>
+</tr>
+<tr>
+        <td><label for="psw-repeat">Återupprepa lösenord</label></td>
+        <td><input type="password" placeholder="Återupprepa lösenord" name="psw-repeat" id="psw-repeat" required></td>
+</tr>
+<tr>
+    <td><label for="date">Datum</label></td>
+    <td><input type="date" placeholder="datum" id="date" required></td>
+</tr>
+<tr>
+        <td><label class="switch">Jag vill gärna ta vara på bra erbjudanden!
+        <td><input type="checkbox"></td>
 
-        <label for="psw">Password</label>
-        <input type="password" placeholder="Lösenord" name="psw" id="psw" required>
-     </div>
-     <div>
-        <label for="psw-repeat">Återupprepa lösenord</label>
-        <input type="password" placeholder="Återupprepa lösenord" name="psw-repeat" id="psw-repeat" required>
-    </div>
-    <div>
-        <label class="switch">Jag vill gärna ta vara på bra erbjudanden!
-        <input type="checkbox">
+    </label></td>
+</tr>
+<tr>
+    <td><input type="radio" id="male" name="gender" value="male"></td>
+    <td><label for="male">Man</label></td><br>
+    <td><input type="radio" id="female" name="gender" value="female" checked="checked"></td>
+    <td><label for="female">Kvinna</label></td><br>
+    <td><input type="radio" id="other" name="gender" value="other"></td>
+    <td><label for="radio">Annan</label></td>
+</tr>   
 
-    </label>
-    </div>
-    <div>
-        <label for=""> 
+<hr>
 
-    </div>       
-    
-
-
-
-
-
-
+<div>
+    <input type="submit" value="Skicka">
+</div> 
+<div>
+    <input type="reset" value="Återställ">
+</div>      
+</table>  
 
 </form>
 
