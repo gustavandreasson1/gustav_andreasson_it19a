@@ -16,16 +16,16 @@
           }
         }
 
-        li a {
-          display: block;
-          color: black
-          padding: 8px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover {
-          background: grey;
-        }
+        li {
+        width:100%;
+        display:block;
+    }
+    li a {
+        text-decoration: none;
+        display:block;
+        background:darkgrey;
+        text-align:center;
+    }
 </style>
 </head>
 <body>
@@ -34,25 +34,19 @@
     </header>
     <section>
         <nav>
-          <h2>nav</h2>
-          <ul>
-            <li><a href="http://andgus.kronhus.tk/tim.html" target="_blank">Tim Berners-Lee</a></li>
-            <li><a href="http://andgus.kronhus.tk/galleri.html" target="_blank">Galleri</a></li>
-            <p>Här är länkar till alla undersidor<p></p>
-        </ul>
+          <h2></h2>
+          <ul class="wrapper">
+            <li><a href="tim.html" target="_blank">Tim Berners-Lee</a></li>
+            <li><a href="galleri.html" target="_blank">Galleri</a></li>
+            <li><a href="flexbox.html" target="_blank">Flex & Box</a></li>
+          </ul>
       </nav>
-      
-        </nav>
-        <article>
-          <h2>Article</h2>
-    
-        </article>
-        <aside>
-          <h2>Aside</h2>
-        </aside>
+    </section>
+    <section>
+      <p>Test</p>
     </section>
     <footer>
-    <h1>footer</h1>    
+      <p>Contact info: gustav.andreasson@elev.ga.ntig.se</p>  
     </footer>
 </body>
 </html>

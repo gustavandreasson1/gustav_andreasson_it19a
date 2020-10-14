@@ -1,17 +1,19 @@
-header, nav, article, aside, footer {
-    border:1px solid black;
+header, nav, footer {
+    border:1px solid greenyellow;
     text-align:center;
     background:greenyellow;
     margin:5px;
 }
-/*nav, article, aside wrapper*/
+
 section{
-    display:flex; 
-    margin:0;
+    border:1px solid black;
+    background-image: greenyellow;
+    margin:5px;
 }
-/*size of nav, artivle, aside*/
-nav{
-    flex:1;
+}
+
+.wrapper {
+    display:flex;
 }
 article{
     flex:3;
@@ -19,12 +21,14 @@ article{
 aside{
     flex:1;
 }
-footer{
-
 }
-/*The @media rule is used in media queries to apply different styles for different media types/devices.*/
+footer {
+    background:darkgrey;
+    color:white;
+}
+
 @media only screen and (max-width: 660px) {
     section {
       flex-direction:column;
     }
-  }
+
