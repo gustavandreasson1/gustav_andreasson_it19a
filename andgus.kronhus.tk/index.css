@@ -1,0 +1,54 @@
+header, nav, footer, section {
+    border:1px solid greenyellow;
+    text-align:center;
+    background:greenyellow;
+    margin:5px;
+}
+
+p{
+    text-align:center;
+    font-size:24px;
+    color: black;
+}
+
+
+.wrapper {
+    display:flex;
+}
+article{
+    flex:3;
+}
+aside{
+    flex:1;
+}
+
+footer {
+    background:darkgrey;
+    color:white;
+}
+
+@media only screen and (max-width: 660px) {
+    section {
+      flex-direction:column;
+    }
+}
+body {
+    background-color: lightblue;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightgrey;
+    }
+  }
+
+  li {
+  width:100%;
+  display:block;
+}
+li a {
+  text-decoration: none;
+  display:block;
+  background:darkgrey;
+  text-align:center;
+}

@@ -37,8 +37,16 @@ function dividera(tal1,tal2){
         return "får ej dela med 0"
     } 
     let summa = tal1/tal2
-    return summa
+    return kvot
+}
+
+console.log(`40/7=${dividera(40,0)}`)
+
+
+function cirkelArea(radie){
+    let area = Math.PI*radie**2
+    return area
 }
 
 
-console.log(`40/7=${dividera(40,0)}`)
+console.log(`Arean av en cirel med radie 1 l.e. är ${cirkelArea(10)}`)
